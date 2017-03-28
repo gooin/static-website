@@ -738,6 +738,10 @@ div#portfolio {
     /*box-shadow: 0 3px 12px rgba(0,0,0,.23);*/
 }
 
+.fold-cards {
+    padding-bottom: 25px;
+}
+
 .card-scale {
     cursor: pointer;
     transition: all 0.6s;
@@ -751,6 +755,10 @@ div#portfolio {
 
 .cards-show-btn-box {
     margin-bottom: 25px;
+}
+
+#card-vertical-box {
+    margin: 2.5em;
 }
 
 /*qsl-cards 页面卡片样式结束*/

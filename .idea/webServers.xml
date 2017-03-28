@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d1d942a6-f546-4146-a697-e1768b7329d5" name="VM" url="http://bg9gxm.win">
+        <fileTransfer host="173.44.174.108" port="22" rootFolder="/home/wwwroot/bg9gxm.win" accessType="SFTP" password="dff8df9cdfc3dfe0df93dfcfdffcdf9ddfe6df9adf9ddf9ddff2dfd0dfc8dfcbdfd8dff0" username="root">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

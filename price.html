@@ -23,6 +23,14 @@
     <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen"/>
     <script src="js/jquery-1.8.3.min.js"></script>
     <script src="js/responsiveslides.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".nav-tabs a").click(function(){
+                $(this).tab('show');
+            });
+        });
+    </script>
     <script>
         $(function () {
             $("#slider").responsiveSlides({
@@ -35,67 +43,67 @@
         });
 
     </script>
-    <!--价格表格 start-->
-    <script>
-        function showUSPrice() {
-            document.getElementById("welcome-price").style.display = "none";
-            document.getElementById("price-in-japan").style.display = "none";
-            document.getElementById("price-in-europe").style.display = "none";
-            document.getElementById("price-in-england").style.display = "none";
-            document.getElementById("price-in-urkaine").style.display = "none";
-            document.getElementById("price-in-others").style.display = "none";
-            document.getElementById("price-in-us").style.display = "block";
-        }
+    <!--&lt;!&ndash;价格表格 start&ndash;&gt;-->
+    <!--<script>-->
+        <!--function showUSPrice() {-->
+            <!--document.getElementById("welcome-price").style.display = "none";-->
+            <!--document.getElementById("price-in-japan").style.display = "none";-->
+            <!--document.getElementById("price-in-europe").style.display = "none";-->
+            <!--document.getElementById("price-in-england").style.display = "none";-->
+            <!--document.getElementById("price-in-urkaine").style.display = "none";-->
+            <!--document.getElementById("price-in-others").style.display = "none";-->
+            <!--document.getElementById("price-in-us").style.display = "block";-->
+        <!--}-->
 
-        function showJapanPrice() {
-            document.getElementById("welcome-price").style.display = "none";
-            document.getElementById("price-in-us").style.display = "none";
-            document.getElementById("price-in-europe").style.display = "none";
-            document.getElementById("price-in-england").style.display = "none";
-            document.getElementById("price-in-urkaine").style.display = "none";
-            document.getElementById("price-in-others").style.display = "none";
-            document.getElementById("price-in-japan").style.display = "block";
-        }
-        function showEuropePrice() {
-            document.getElementById("welcome-price").style.display = "none";
-            document.getElementById("price-in-japan").style.display = "none";
-            document.getElementById("price-in-england").style.display = "none";
-            document.getElementById("price-in-urkaine").style.display = "none";
-            document.getElementById("price-in-others").style.display = "none";
-            document.getElementById("price-in-us").style.display = "none";
-            document.getElementById("price-in-europe").style.display = "block";
-        }
-        function showEnglandPrice() {
-            document.getElementById("welcome-price").style.display = "none";
-            document.getElementById("price-in-japan").style.display = "none";
-            document.getElementById("price-in-europe").style.display = "none";
-            document.getElementById("price-in-urkaine").style.display = "none";
-            document.getElementById("price-in-others").style.display = "none";
-            document.getElementById("price-in-us").style.display = "none";
-            document.getElementById("price-in-england").style.display = "block";
-        }
-        function showUrkainePrice() {
-            document.getElementById("welcome-price").style.display = "none";
-            document.getElementById("price-in-japan").style.display = "none";
-            document.getElementById("price-in-europe").style.display = "none";
-            document.getElementById("price-in-england").style.display = "none";
-            document.getElementById("price-in-others").style.display = "none";
-            document.getElementById("price-in-us").style.display = "none";
-            document.getElementById("price-in-urkaine").style.display = "block";
-        }
-        function showOthersPrice() {
-            document.getElementById("welcome-price").style.display = "none";
-            document.getElementById("price-in-japan").style.display = "none";
-            document.getElementById("price-in-europe").style.display = "none";
-            document.getElementById("price-in-england").style.display = "none";
-            document.getElementById("price-in-urkaine").style.display = "none";
-            document.getElementById("price-in-us").style.display = "none";
-            document.getElementById("price-in-others").style.display = "block";
-        }
+        <!--function showJapanPrice() {-->
+            <!--document.getElementById("welcome-price").style.display = "none";-->
+            <!--document.getElementById("price-in-us").style.display = "none";-->
+            <!--document.getElementById("price-in-europe").style.display = "none";-->
+            <!--document.getElementById("price-in-england").style.display = "none";-->
+            <!--document.getElementById("price-in-urkaine").style.display = "none";-->
+            <!--document.getElementById("price-in-others").style.display = "none";-->
+            <!--document.getElementById("price-in-japan").style.display = "block";-->
+        <!--}-->
+        <!--function showEuropePrice() {-->
+            <!--document.getElementById("welcome-price").style.display = "none";-->
+            <!--document.getElementById("price-in-japan").style.display = "none";-->
+            <!--document.getElementById("price-in-england").style.display = "none";-->
+            <!--document.getElementById("price-in-urkaine").style.display = "none";-->
+            <!--document.getElementById("price-in-others").style.display = "none";-->
+            <!--document.getElementById("price-in-us").style.display = "none";-->
+            <!--document.getElementById("price-in-europe").style.display = "block";-->
+        <!--}-->
+        <!--function showEnglandPrice() {-->
+            <!--document.getElementById("welcome-price").style.display = "none";-->
+            <!--document.getElementById("price-in-japan").style.display = "none";-->
+            <!--document.getElementById("price-in-europe").style.display = "none";-->
+            <!--document.getElementById("price-in-urkaine").style.display = "none";-->
+            <!--document.getElementById("price-in-others").style.display = "none";-->
+            <!--document.getElementById("price-in-us").style.display = "none";-->
+            <!--document.getElementById("price-in-england").style.display = "block";-->
+        <!--}-->
+        <!--function showUrkainePrice() {-->
+            <!--document.getElementById("welcome-price").style.display = "none";-->
+            <!--document.getElementById("price-in-japan").style.display = "none";-->
+            <!--document.getElementById("price-in-europe").style.display = "none";-->
+            <!--document.getElementById("price-in-england").style.display = "none";-->
+            <!--document.getElementById("price-in-others").style.display = "none";-->
+            <!--document.getElementById("price-in-us").style.display = "none";-->
+            <!--document.getElementById("price-in-urkaine").style.display = "block";-->
+        <!--}-->
+        <!--function showOthersPrice() {-->
+            <!--document.getElementById("welcome-price").style.display = "none";-->
+            <!--document.getElementById("price-in-japan").style.display = "none";-->
+            <!--document.getElementById("price-in-europe").style.display = "none";-->
+            <!--document.getElementById("price-in-england").style.display = "none";-->
+            <!--document.getElementById("price-in-urkaine").style.display = "none";-->
+            <!--document.getElementById("price-in-us").style.display = "none";-->
+            <!--document.getElementById("price-in-others").style.display = "block";-->
+        <!--}-->
 
 
-    </script>
-    <!--价格表格 end-->
+    <!--</script>-->
+    <!--&lt;!&ndash;价格表格 end&ndash;&gt;-->
 
     <!---- start-smoth-scrolling---->
     <script type="text/javascript" src="js/move-top.js"></script>
@@ -171,16 +179,14 @@
 <!-- 404 -->
 <div class="main page-not-found text-center">
     <div class="container">
-        <div class="btn-group price-btn-box">
-            <button class="btn btn-info" onclick="showUSPrice()">USA and Canada</button>
-            <button class="btn btn-info" onclick="showJapanPrice()">Japan and Korea</button>
-            <button class="btn btn-info" onclick="showEuropePrice()">Europe</button>
-            <button class="btn btn-info" onclick="showEnglandPrice()">England</button>
-            <button class="btn btn-info" onclick="showUrkainePrice()">Urkaine</button>
-            <button class="btn btn-info" onclick="showOthersPrice()">Other Countries</button>
-
-
-        </div>
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#price-in-us">USA and Canada</a></li>
+            <li><a href="#price-in-japan">Japan and Korea</a></li>
+            <li><a href="#price-in-europe">Europe </a></li>
+            <li><a href="#price-in-england">England</a></li>
+            <li><a href="#price-in-urkaine">Urkaine</a></li>
+            <li><a href="#price-in-others">Other Countries</a></li>
+        </ul>
         <div class="alert alert-warning">
             <h3 id="welcome-price" style="display: none ">choose a region to show the price :)</h3>
             <p>PS：this price list include delivery fee (SAL).<br>SAL is a service where international mail is handled as
@@ -189,8 +195,9 @@
                 down here, if you have other demand, please contact me.
             </p>
         </div>
-        <div id="price-in-us" style="display: none">
-            <table class="table table-b<br>ordered table-hover table-striped table-responsive">
+        <div class="tab-content">
+        <div id="price-in-us" class="tab-pane fade in active">
+            <table class="table table-bordered table-hover table-striped table-responsive">
                 <thead>
                 <tr>
                     <th>Plan number</th>
@@ -530,8 +537,8 @@
                 </tbody>
             </table>
         </div>
-        <div id="price-in-japan" style="display: none">
-            <table class="table table-b<br>ordered table-hover table-striped table-responsive">
+        <div id="price-in-japan" class="tab-pane fade">
+            <table class="table table-bordered table-hover table-striped table-responsive">
                 <thead class="text-center">
                 <tr>
                     <th>Plan number</th>
@@ -872,8 +879,8 @@
                 </tbody>
             </table>
         </div>
-        <div id="price-in-europe" style="display: none">
-            <table class="table table-b<br>ordered table-hover table-striped table-responsive">
+        <div id="price-in-europe" class="tab-pane fade">
+            <table class="table table-bordered table-hover table-striped table-responsive">
                 <thead>
                 <tr>
                     <th>Plan number</th>
@@ -1213,8 +1220,8 @@
                 </tbody>
             </table>
         </div>
-        <div id="price-in-england" style="display: none">
-            <table class="table table-b<br>ordered table-hover table-striped table-responsive">
+        <div id="price-in-england" class="tab-pane fade">
+            <table class="table table-bordered table-hover table-striped table-responsive">
                 <thead>
                 <tr>
                     <th>Plan number</th>
@@ -1554,8 +1561,8 @@
                 </tbody>
             </table>
         </div>
-        <div id="price-in-urkaine" style="display: none">
-            <table class="table table-b<br>ordered table-hover table-striped table-responsive">
+        <div id="price-in-urkaine" class="tab-pane fade">
+            <table class="table table-bordered table-hover table-striped table-responsive">
                 <thead>
                 <tr>
                     <th>Plan number</th>
@@ -1895,8 +1902,8 @@
                 </tbody>
             </table>
         </div>
-        <div id="price-in-others" style="display: none">
-            <table class="table table-b<br>ordered table-hover table-striped table-responsive">
+        <div id="price-in-others" class="tab-pane fade">
+            <table class="table table-bordered table-hover table-striped table-responsive">
                 <thead>
                 <tr>
                     <th>Plan number</th>
@@ -2235,6 +2242,7 @@
                 </tr>
                 </tbody>
             </table>
+        </div>
         </div>
         <!--<h1>Oops! </h1>-->
         <!--<p>There's a lot of reasons why this page is<span class="err<br>or"> 404</span>.<br>-->

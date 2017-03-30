@@ -23,6 +23,7 @@
     <!--<link href='http://fonts.googleapis.com/css?family=Fugaz+One' rel='stylesheet' type='text/css'>-->
     <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen"/>
     <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/responsiveslides.min.js"></script>
     <script>
         $(function () {
@@ -51,34 +52,11 @@
     <!---End-smoth-scrolling---->
     <!--start card box btn-->
     <script>
-        function showFrontCards() {
-            document.getElementById("card-box").style.display = "block";
-            document.getElementById("card-folding-box").style.display = "none";
-            document.getElementById("card-vertical-box").style.display = "none";
-            document.getElementById("card-back-box").style.display = "none";
-            document.getElementById("card-front-box").style.display = "block";
-        }
-        function showFoldingCards() {
-            document.getElementById("card-box").style.display = "block";
-            document.getElementById("card-vertical-box").style.display = "none";
-            document.getElementById("card-back-box").style.display = "none";
-            document.getElementById("card-front-box").style.display = "none";
-            document.getElementById("card-folding-box").style.display = "block";
-        }
-        function showVerticalCards() {
-            document.getElementById("card-box").style.display = "block";
-            document.getElementById("card-folding-box").style.display = "none";
-            document.getElementById("card-back-box").style.display = "none";
-            document.getElementById("card-front-box").style.display = "none";
-            document.getElementById("card-vertical-box").style.display = "block";
-        }
-        function showBackCards() {
-            document.getElementById("card-box").style.display = "block";
-            document.getElementById("card-folding-box").style.display = "none";
-            document.getElementById("card-vertical-box").style.display = "none";
-            document.getElementById("card-front-box").style.display = "none";
-            document.getElementById("card-back-box").style.display = "block";
-        }
+        $(document).ready(function(){
+            $(".nav-tabs a").click(function(){
+                $(this).tab('show');
+            });
+        });
     </script>
     <!--end card box btn-->
 </head>
@@ -141,15 +119,17 @@
         <div class="our-work-section-head text-center">
 
             <h3>qsl cards show</h3>
+            <ul class="nav nav-tabs">
+                <li class="active"><a class="tab-control" href="#card-front-box">Front</a></li>
+                <li><a href="#card-folding-box">Folding</a></li>
+                <li><a href="#card-vertical-box">Vertical </a></li>
+                <li><a href="#card-back-box">Back</a></li>
+                <li><a href="#card-actual-shooting-box">Actual Shooting</a></li>
+            </ul>
 
-            <div class="btn-group cards-show-btn-box">
-                <button class="btn btn-info" onclick="showFrontCards()">Front <span class="badge"> new!</span></button>
-                <button class="btn btn-info" onclick="showFoldingCards()">Folding <span class="badge"> 2</span></button>
-                <button class="btn btn-info" onclick="showVerticalCards()">Vertical <span class="badge"> 1</span></button>
-                <button class="btn btn-info" onclick="showBackCards()">Actual Shooting <span class="badge"> 7</span></button>
-            </div>
-            <div id="card-box">
-                <div id="card-front-box">
+
+            <div id="card-box" class="tab-content">
+                <div id="card-front-box" class="tab-pane fade in active">
                     <div class="col-md-4 cards">
                         <img class="card-scale" src="images/cards/front/card-bridge.jpg">
                     </div>
@@ -196,7 +176,7 @@
                         <img class="card-scale" src="images/cards/front/lizard-bg5eib.jpg">
                     </div>
                 </div>
-                <div id="card-folding-box" style="display: none">
+                <div id="card-folding-box" class="tab-pane fade tab-panel">
                     <div class="col-md-5 col-md-offset-2 fold-cards">
                         <img class="card-scale" src="images/cards/folding/sheepskin-raft-fold-front.jpg">
                     </div>
@@ -204,14 +184,16 @@
                         <img class="card-scale" src="images/cards/folding/sheepskin-raft-fold-back.jpg">
                     </div>
                 </div>
-                <div id="card-vertical-box" style="display: none">
+                <div id="card-vertical-box" class="tab-pane fade tab-panel">
                     <div class="col-md-4 cards">
                         <img class="card-scale" src="images/cards/vertical/card-cebu-island1.jpg">
                     </div>
                 </div>
-                <div id="card-back-box" style="display: none">
+                <div id="card-back-box" class="tab-pane fade tab-panel">
 
-                    <div class="col-md-4 cards">
+                </div>
+                <div id="card-actual-shooting-box" class="tab-pane fade tab-panel">
+                     <div class="col-md-4 cards">
                         <img class="card-scale" src="images/scroll/sm-realshoot1.png">
                     </div> <div class="col-md-4 cards">
                         <img class="card-scale" src="images/scroll/sm-realshoot2.png">
@@ -226,7 +208,6 @@
                     </div> <div class="col-md-4 cards">
                         <img class="card-scale" src="images/scroll/sm-realshoot7.png">
                     </div>
-
                 </div>
             </div>
 

@@ -738,6 +738,11 @@ div#portfolio {
     /*box-shadow: 0 3px 12px rgba(0,0,0,.23);*/
 }
 
+#card-box {
+    margin-top: 25px;
+}
+
+
 .fold-cards {
     padding-bottom: 25px;
 }

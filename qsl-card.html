@@ -25,12 +25,11 @@
     <script src="js/jquery-1.8.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/responsiveslides.min.js"></script>
+    <script src="js/bttostrap.pagy.js"> </script>
     <script>
         $(function () {
             $("#slider").responsiveSlides({
                 auto: true,
-                nav: true,
-
                 speed: 500,
                 namespace: "callbacks",
                 pager: true
@@ -76,9 +75,10 @@
                 </ul>
             </div>
             <div class="social-icons">
-                <a href="#"><span class="flag-icon flag-icon-cn"></span></a>
-                <a href="#"> <span class="flag-icon flag-icon-us"></span></a>
-                <a href="#"> <span class="flag-icon flag-icon-jp"></span></a>
+                <a href="https://item.taobao.com/item.htm?spm=a230r.1.14.3.jCwvkE&id=544796942164&ns=1&abbucket=15#detail"
+                   target="_blank"><span class="flag-icon flag-icon-cn"></span></a>
+                <a href="index.html"><span class="flag-icon flag-icon-us"></span></a>
+                <a href="jp/index.html"><span class="flag-icon flag-icon-jp"></span></a>
             </div>
         </div>
     </div>
@@ -97,8 +97,7 @@
                         <li><a href="index.html"><span data-hover="Home">Home</span></a></li>
                         <li><a href="qsl-card.html" class="active"><span data-hover="QSL Card">QSL Card</span></a></li>
                         <li><a href="price.html"><span data-hover="price">price</span></a></li>
-                        <li><a href="request-example.html"><span data-hover="request example">request example</span></a>
-                        </li>
+                        <li><a href="request-sample.html" ><span data-hover="request sample">request sample</span></a></li>
                         <li><a href="contact.html"><span
                                 data-hover="order & contact">order & contact</span></a></li>
                     </ul>
@@ -122,16 +121,29 @@
         <div class="our-work-section-head text-center">
 
             <h3>qsl cards show</h3>
-            <ul class="nav nav-tabs">
+            <!--<div class="col-md-8">-->
+             <ul class="nav nav-tabs">
                 <li class="active"><a class="tab-control" href="#card-front-box">Front</a></li>
                 <li><a href="#card-folding-box">Folding</a></li>
                 <li><a href="#card-vertical-box">Vertical </a></li>
                 <li><a href="#card-back-box">Back</a></li>
                 <li><a href="#card-actual-shooting-box">Actual Shooting</a></li>
             </ul>
+            <!--</div>-->
+            <!--<div class="col-md-4">-->
+                <!--<ul class="pagination">-->
+                    <!--<li><a href="#">&laquo;</a></li>-->
+                    <!--<li><a href="#">1</a></li>-->
+                    <!--<li><a href="#">2</a></li>-->
+                    <!--<li><a href="#">&raquo;</a></li>-->
+                <!--</ul>-->
+            <!--</div>-->
+
 
             <div id="card-box" class="tab-content">
+
                 <div id="card-front-box" class="tab-pane fade in active">
+
                     <div class="col-md-4 cards">
                         <img class="card-scale" src="images/cards/front/card-bridge.jpg">
                     </div>
@@ -334,7 +346,7 @@
                 <li><a href="index.html">home</a></li>
                 <li><a href="qsl-card.html" class="active">QSL Card</a></li>
                 <li><a href="price.html">price</a></li>
-                <li><a href="request-example.html">request example</a></li>
+                <li><a href="request-sample.html">request sample</a></li>
                 <li><a href="contact.html">order & contact</a></li>
             </ul>
         </div>
